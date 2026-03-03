@@ -114,7 +114,7 @@ public class Zoo {
         // Create a zoo with default constructor
         Zoo zoo1 = new Zoo();
         // Demonstrate howManyAnimals
-        System.out.println("The number of animals in zoo1: " + zoo1.howMnayAnimals());
+        System.out.println(zoo1.howManyAnimals());
         // Try adding a new animal into cage 0
         zoo1.putAnimalInCage(zoo1.getCageAtIndex(0), new Animal());
         // Move an animal from one cage to another
@@ -123,8 +123,8 @@ public class Zoo {
         // returned from moveAnimal
         zoo1.moveAnimal(new Cage(), zoo1.getCageAtIndex(1), zoo1.getCageAtIndex(0).getAnimalAtIndex(0));
         // Try adding to a cage that does NOT belong to this zoo
-        
+        zoo1.putAnimalInCage(new Cage(), new Animal());
         // Speak demo
-        
+        System.out.println(zoo1.getCageAtIndex(0).getAnimalAtIndex(0).speak());
     }
 }
