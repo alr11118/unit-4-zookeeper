@@ -5,7 +5,7 @@ public class Zoo {
     // ===== Instance Variables =====
     // Create (but do not instantiate) a private instance variable called "cages".
     // This variable is an ArrayList of Cages.
-    ArrayList<Cage> cages;
+    private ArrayList<Cage> cages;
 
 
     // ===== Constructors =====
