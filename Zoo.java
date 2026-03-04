@@ -77,13 +77,13 @@ public class Zoo {
         // - verify from and to are in this Zoo
         // - verify animal is in from
         // - remove from 'from' and add to 'to'
-        if(cages.indexOf(from) < 0 && cages.indexOf(to) < 0) {
-         return false;
-        } 
-        else {
+        if(cages.indexOf(from) >= 0 && cages.indexOf(to) >= 0) {
          from.removeAnimal(animal);
          to.addAnimal(animal);
          return true;
+        } 
+        else {
+         return false;
         }
     }
 
